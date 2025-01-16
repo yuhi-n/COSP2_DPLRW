@@ -16,10 +16,14 @@ Statistics of Z<sub>e</sub> (dB mm<sup>6</sup>/m<sup>3</sup>), V<sub>d</sub> (m/
 This is modified to calculate droplet fall speeds multiplied by radar reflectivity and integrated over droplet size distribution.<br>
 The `hydroclass init` routine is expanded to include parameters of droplet fall velocity, and is adjusted for control by NAMELIST.
 
+## 4. cosp_config.F90
+This contains parameters for min/max values and bin width for statistics of Z<sub>e</sub>, V<sub>d</sub>, and spectrum width.
+
 ## 4. cosp_utils.F90
 The routine for precipitation flux conversion into mixing ratio is updated to refer to droplet fall speed.
 
 ## 5. cosp_miroc_drive.F90
 This is an example COSP2 driver, which is for MIROC6 GCM.<br>
 The vertcal air velocity and convective mass flux are new required variables.<br>
-The variables and I/O routines for Doppler signals are added.
+The variables and I/O routines for Doppler signals are added.<br>
+This calls `cosp.F90` and subcolumn processes.
