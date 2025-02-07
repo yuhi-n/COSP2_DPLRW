@@ -1,6 +1,6 @@
 # COSP2_DPLRW
 Doppler radar signal simulator, implemented on COSP2.<br>
-This is a beta version. The author is due for a code review by the development team.
+This is a beta version. The author is due for a code review by COSP2 development team.
 
 Details of each file are as follows.<br>
 The additional section is controlled by fortran preprocessor, named `OPT_DPLRW`.<br>
